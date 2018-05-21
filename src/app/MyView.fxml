@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.MyController">
+   <children>
+      <Button fx:id="btn_shot" layoutX="872.0" layoutY="37.0" mnemonicParsing="false" onAction="#takeShot" prefHeight="26.0" prefWidth="90.0" text="Run camera">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="ta_details" editable="false" layoutX="821.0" layoutY="80.0" prefHeight="262.0" prefWidth="180.0" promptText="Параметри об'єкту" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </TextArea>
+      
+      <ImageView fx:id="iv_video" fitHeight="284.0" fitWidth="370.0" layoutX="14.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="74.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="640.0" AnchorPane.topAnchor="63.0" />
+      <Label layoutX="580.0" layoutY="32.0" prefHeight="19.0" prefWidth="69.0" text="отримано" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" AnchorPane.leftAnchor="580.0" AnchorPane.topAnchor="32.0">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+
+      <ImageView fx:id="iv_frame" fitHeight="284.0" fitWidth="355.0" layoutX="432.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="432.0" AnchorPane.topAnchor="64.0" />
+      <Label layoutX="173.0" layoutY="32.0" text="відео">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
